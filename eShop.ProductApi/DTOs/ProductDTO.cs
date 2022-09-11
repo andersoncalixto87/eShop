@@ -20,7 +20,9 @@ public class ProductDTO
     [Range(1,9999)]
     public long Stock { get; set; }
     public string? ImageURL { get; set; }
+    public string? CategoryName { get; set; }
     [JsonIgnore]
     public CategoryDTO? Category { get; set; }
     public int CategoryId { get; set; }
+
 }
